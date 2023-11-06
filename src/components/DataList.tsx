@@ -1,13 +1,13 @@
+import { useState } from 'react';
 import generateRandomData from '../helper/DataGenerator';
 import '../App.css';
-import { useState } from 'react';
 
 const DataList = () => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState<number | ''>('');
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState(generateRandomData());
 
-  const dataString = JSON.stringify(data, null, 2);
+  const dataString = JSON.stringify(data, null, 4);
   const dataBlob = new Blob([dataString], { type: 'application/json' });
   const dataUrl = URL.createObjectURL(dataBlob);
 
@@ -17,19 +17,30 @@ const DataList = () => {
   };
 
   const handleNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.preventDefault();
-    const insertValue = event.target.value;
-    if (Number(insertValue) < 1 || !Number.isInteger(Number(insertValue))) {
-      setError('Please enter a whole number equal or greater than 1');
-    } else {
-      setError(null);
-      setValue(Number(insertValue));
+    setError(null);
+
+    const inputValue = Number(event.target.value);
+
+    if (isNaN(Number(inputValue))) {
+      setError('Please enter a number');
+      setValue('');
+      return;
     }
+
+    setValue(inputValue);
   };
 
   const handleGenerateData = () => {
-    const newData = generateRandomData(value);
-    setData(newData);
+    const number = Number(value);
+
+    if (!(number >= 1 && number <= 100)) {
+      setError('Please enter a number between 1 and 100');
+      setValue('');
+      return;
+    }
+
+    const newData = generateRandomData(Number(value));
+    return setData(newData);
   };
 
   return (
@@ -41,9 +52,9 @@ const DataList = () => {
 
       <div className="generate">
         <input
-          type="number"
-          min="1"
+          type="text"
           placeholder="Enter a number"
+          value={value}
           required
           onChange={handleNumberChange}
         />
