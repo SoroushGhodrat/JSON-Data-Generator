@@ -1,4 +1,4 @@
-import Data from "../declarations/models";
+import Data from '../declarations/models';
 import {
   maleFirstNames,
   femaleFirstNames,
@@ -6,7 +6,7 @@ import {
   cities,
   positions,
   genders,
-} from "../mocks/data";
+} from '../mocks/data';
 
 export default function generateRandomData(count = 1): Array<Data> {
   const data = [];
@@ -25,7 +25,7 @@ export default function generateRandomData(count = 1): Array<Data> {
     data.push({
       _id: Math.random().toString(36).substr(2, 9),
       isAvailable: Math.random() < 0.5,
-      picture: "http://placehold.it/32x32",
+      picture: 'http://placehold.it/32x32',
       age: Math.floor(Math.random() * (70 - 22 + 1)) + 22,
       first_name: randomFirstName,
       last_name: randomLastName,

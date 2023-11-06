@@ -225,4 +225,11 @@ const positions: string[] = [
 
 const genders: string[] = ['male', 'female', 'Non-binary'];
 
-export { maleFirstNames, femaleFirstNames, lastNames, cities, positions, genders };
+export {
+  maleFirstNames,
+  femaleFirstNames,
+  lastNames,
+  cities,
+  positions,
+  genders,
+};
