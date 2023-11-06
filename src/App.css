@@ -1,15 +1,13 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #f0f0f0;
+  height: 100vh;
+  background: #f0f0f0;
 }
 
 h2 {
@@ -98,9 +96,14 @@ h4 {
   }
 }
 
-/* For mobile view */
-@media (max-width: 1023px) {
+@media screen and (min-width: 480px) {
+  .generate input,
+  .generate button {
+    width: 70%;
+    margin-bottom: 10px;
+  }
   .data {
-    max-height: 80vh;
+    overflow-y: scroll;
+    height: 100px;
   }
 }

@@ -223,7 +223,7 @@ const positions: string[] = [
   'project manager',
 ];
 
-const genders: string[] = ['male', 'female', 'Non-binary'];
+const genders: string[] = ['male', 'female'];
 
 export {
   maleFirstNames,
