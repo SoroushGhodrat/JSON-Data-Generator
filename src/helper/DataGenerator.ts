@@ -1,20 +1,23 @@
 import Data from "../declarations/models";
 import {
-  firstNames,
+  maleFirstNames,
+  femaleFirstNames,
   lastNames,
   cities,
   positions,
   genders,
-} from "../model/data";
+} from "../mocks/data";
 
 export default function generateRandomData(count = 1): Array<Data> {
   const data = [];
   for (let i = 0; i < count; i++) {
+    const randomGender = genders[Math.floor(Math.random() * genders.length)];
     const randomFirstName =
-      firstNames[Math.floor(Math.random() * firstNames.length)];
+      randomGender === 'male'
+        ? maleFirstNames[Math.floor(Math.random() * maleFirstNames.length)]
+        : femaleFirstNames[Math.floor(Math.random() * femaleFirstNames.length)];
     const randomLastName =
       lastNames[Math.floor(Math.random() * lastNames.length)];
-    const randomGender = genders[Math.floor(Math.random() * genders.length)];
     const randomPosition =
       positions[Math.floor(Math.random() * positions.length)];
     const randomCity = cities[Math.floor(Math.random() * cities.length)];
