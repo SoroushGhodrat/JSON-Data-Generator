@@ -40,7 +40,13 @@ const DataList = () => {
       </span>
 
       <div className="generate">
-        <input type="number" min="1" placeholder="Enter a number" required onChange={handleNumberChange} />
+        <input
+          type="number"
+          min="1"
+          placeholder="Enter a number"
+          required
+          onChange={handleNumberChange}
+        />
         <button onClick={handleGenerateData}>GENERATE</button>
       </div>
 
