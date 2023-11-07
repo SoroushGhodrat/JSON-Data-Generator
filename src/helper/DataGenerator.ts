@@ -3,7 +3,7 @@ import {
   maleFirstNames,
   femaleFirstNames,
   lastNames,
-  cities,
+  offices,
   positions,
   genders,
 } from '../mocks/data';
@@ -32,7 +32,7 @@ export default function generateRandomData(count = 1): Array<Data> {
 
     const randomPosition =
       positions[Math.floor(Math.random() * positions.length)];
-    const randomCity = cities[Math.floor(Math.random() * cities.length)];
+    const randomOffice = offices[Math.floor(Math.random() * offices.length)];
 
     data.push({
       _id: id,
@@ -44,7 +44,7 @@ export default function generateRandomData(count = 1): Array<Data> {
       age: Math.floor(Math.random() * (70 - 22 + 1)) + 22,
       picture: 'http://placehold.it/32x32',
       email: `${randomFirstName.toLowerCase()}.${randomLastName.toLowerCase()}@example.com`,
-      city: randomCity,
+      office: randomOffice,
     });
   }
 

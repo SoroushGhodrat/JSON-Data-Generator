@@ -8,7 +8,7 @@ interface Data {
   gender: string;
   email: string;
   position: string;
-  city: string;
+  office: string;
 }
 
 export default Data;

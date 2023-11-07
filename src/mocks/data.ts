@@ -201,7 +201,7 @@ const lastNames: string[] = [
   'Zara',
 ];
 
-const cities: string[] = [
+const offices: string[] = [
   'Oslo',
   'Bergen',
   'Trondheim',
@@ -229,7 +229,7 @@ export {
   maleFirstNames,
   femaleFirstNames,
   lastNames,
-  cities,
+  offices,
   positions,
   genders,
 };
