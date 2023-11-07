@@ -65,7 +65,7 @@ const DataList = () => {
 
       <div className="action-buttons">
         <a href={dataUrl} download="data.json">
-          Download JSON File
+          Download as a JSON File
         </a>
         <button onClick={handleCopy}>Copy Data</button>
       </div>
