@@ -1,3 +1,5 @@
+const genders: string[] = ['male', 'female'];
+
 const maleFirstNames: string[] = [
   'Liam',
   'Noah',
@@ -215,14 +217,47 @@ const offices: string[] = [
 ];
 
 const positions: string[] = [
-  'frontend developer',
-  'backend developer',
-  'full stack developer',
-  'UI designer',
-  'project manager',
+  'frontend_developer',
+  'backend_developer',
+  'fullstack_developer',
+  'ui_designer',
+  'project_manager',
 ];
 
-const genders: string[] = ['male', 'female'];
+const fullstackSkills: string[] = [
+  'HTML5',
+  'CSS3',
+  'JavaScript (ES6+)',
+  'React.js',
+  'Angular',
+  'Vue.js',
+  'Node.js',
+  'Express.js',
+  'Django',
+  'Flask',
+  'Ruby on Rails',
+  'Spring Boot',
+  'ASP.NET',
+  'Java',
+  'Python',
+  'C#',
+  'RESTful API Design',
+  'GraphQL',
+  'MongoDB',
+  'MySQL',
+  'PostgreSQL',
+  'Firebase',
+  'Git',
+  'GitHub',
+  'Webpack',
+  'Babel',
+  'Docker',
+  'Jenkins',
+  'AWS',
+  'Heroku',
+  'Responsive Design',
+  'Testing (Jest, Mocha, Jasmine)',
+];
 
 const frontendSkills: string[] = [
   'HTML5',
@@ -374,5 +409,6 @@ export {
   frontendSkills,
   backendSkills,
   uiDesignerSkills,
-  projectManagerSkills
+  projectManagerSkills,
+  fullstackSkills,
 };
