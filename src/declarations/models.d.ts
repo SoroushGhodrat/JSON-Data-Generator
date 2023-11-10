@@ -13,6 +13,10 @@ interface Data {
   frontendSkills: string;
   backendSkills: string;
   uiDesignerSkills: string;
+  frontendSkills: string;
+  backendSkills: string;
+  uiDesignerSkills: string;
+  projectManagerSkills: string;
 }
 
 export default Data;
