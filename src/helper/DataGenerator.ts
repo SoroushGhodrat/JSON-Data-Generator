@@ -17,13 +17,9 @@ import {
 
 export default function generateRandomData(count = 1): Array<Data> {
   const data = [];
-  const ids = new Set();
   const names = new Set();
   while (data.length < count) {
-    const id = Math.random().toString(36).substr(2, 9);
-    if (ids.has(id)) continue;
-    ids.add(id);
-
+    const id: string = crypto.randomUUID();
     // generate random gender
     const randomGender = genders[Math.floor(Math.random() * genders.length)];
 
