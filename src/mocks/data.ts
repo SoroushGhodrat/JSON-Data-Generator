@@ -329,6 +329,41 @@ const uiDesignerSkills: string[] = [
   'Collaboration',
 ];
 
+const projectManagerSkills: string[] = [
+  'Leadership',
+  'Communication',
+  'Team Building',
+  'Problem Solving',
+  'Time Management',
+  'Organization',
+  'Risk Management',
+  'Adaptability',
+  'Negotiation',
+  'Stakeholder Management',
+  'Critical Thinking',
+  'Decision Making',
+  'Budget Management',
+  'Quality Management',
+  'Strategic Planning',
+  'Conflict Resolution',
+  'Emotional Intelligence',
+  'Client Management',
+  'Resource Allocation',
+  'Scope Management',
+  'Agile Methodologies',
+  'Change Management',
+  'Contract Management',
+  'Vendor Management',
+  'Process Improvement',
+  'Data Analysis',
+  'Presentation Skills',
+  'Motivation',
+  'Innovation',
+  'Project Scheduling',
+  'Cross-functional Collaboration',
+  'Technical Proficiency',
+];
+
 export {
   maleFirstNames,
   femaleFirstNames,
@@ -338,5 +373,6 @@ export {
   genders,
   frontendSkills,
   backendSkills,
-  uiDesignerSkills
+  uiDesignerSkills,
+  projectManagerSkills
 };
