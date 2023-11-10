@@ -1,4 +1,6 @@
 import Data from '../declarations/models';
+
+// image and phone generate here. They do not use mocks data.
 import {
   maleFirstNames,
   femaleFirstNames,
@@ -18,6 +20,7 @@ export default function generateRandomData(count = 1): Array<Data> {
     ids.add(id);
 
     const randomGender = genders[Math.floor(Math.random() * genders.length)];
+
     let randomFirstName, randomLastName;
     do {
       randomFirstName =
@@ -32,7 +35,10 @@ export default function generateRandomData(count = 1): Array<Data> {
 
     const randomPosition =
       positions[Math.floor(Math.random() * positions.length)];
+
     const randomOffice = offices[Math.floor(Math.random() * offices.length)];
+
+    const randomPhone = Math.floor(10000000 + Math.random() * 90000000);
 
     data.push({
       _id: id,
@@ -42,9 +48,10 @@ export default function generateRandomData(count = 1): Array<Data> {
       isAvailable: Math.random() < 0.5,
       gender: randomGender,
       age: Math.floor(Math.random() * (70 - 22 + 1)) + 22,
-      picture: 'http://placehold.it/32x32',
+      image: 'http://placehold.it/32x32',
       email: `${randomFirstName.toLowerCase()}.${randomLastName.toLowerCase()}@example.com`,
       office: randomOffice,
+      phone: randomPhone,
     });
   }
 

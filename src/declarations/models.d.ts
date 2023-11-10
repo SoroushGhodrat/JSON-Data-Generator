@@ -1,7 +1,7 @@
 interface Data {
   _id: string;
   isAvailable: boolean;
-  picture: string;
+  image: string;
   age: number;
   first_name: string;
   last_name: string;
@@ -9,6 +9,7 @@ interface Data {
   email: string;
   position: string;
   office: string;
+  phone: number;
 }
 
 export default Data;
