@@ -10,13 +10,7 @@ interface Data {
   position: string;
   office: string;
   phone: number;
-  frontendSkills: string;
-  backendSkills: string;
-  uiDesignerSkills: string;
-  frontendSkills: string;
-  backendSkills: string;
-  uiDesignerSkills: string;
-  projectManagerSkills: string;
+  skills: string[];
 }
 
 export default Data;
