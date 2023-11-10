@@ -17,16 +17,17 @@ The application generates an array of data based on the following model:
 
 ```typescript
 Data {
-    _id: string;
-    isAvailable: boolean;
-    picture: string;
-    age: number;
-    first_name: string;
-    last_name: string;
-    gender: string;
-    email: string;
-    position: string;
-    city: string;
+  _id: string;
+  isAvailable: boolean;
+  image: string;
+  age: number;
+  first_name: string;
+  last_name: string;
+  gender: string;
+  email: string;
+  position: string;
+  office: string;
+  phone: number;
 }
 ```
 
