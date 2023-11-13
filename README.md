@@ -30,6 +30,7 @@ Data {
   phone: number;
   skills: string[];
   nationality: string;
+  description: string;
 }
 ```
 
