@@ -13,6 +13,7 @@ import {
   uiDesignerSkills,
   projectManagerSkills,
   fullstackSkills,
+  mationalities,
 } from '../mocks/data';
 
 export default function generateRandomData(count = 1): Array<Data> {
@@ -79,6 +80,10 @@ export default function generateRandomData(count = 1): Array<Data> {
     // generate a random phone number
     const randomPhone = Math.floor(10000000 + Math.random() * 90000000);
 
+    // generate a random nationality
+    const randomNationality =
+      mationalities[Math.floor(Math.random() * mationalities.length)];
+
     // add all generated data to the data variable
     data.push({
       _id: id,
@@ -93,6 +98,7 @@ export default function generateRandomData(count = 1): Array<Data> {
       office: randomOffice,
       phone: randomPhone,
       skills: randomSkills,
+      nationality: randomNationality,
     });
   }
 

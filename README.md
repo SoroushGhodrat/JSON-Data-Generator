@@ -29,6 +29,7 @@ Data {
   office: string;
   phone: number;
   skills: string[];
+  nationality: string;
 }
 ```
 

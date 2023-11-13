@@ -6,6 +6,7 @@ const DataList = () => {
   const [value, setValue] = useState<number | ''>('');
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState(generateRandomData());
+  const maxData: number = 200;
 
   const dataString = JSON.stringify(data, null, 4);
   const dataBlob = new Blob([dataString], { type: 'application/json' });
@@ -33,8 +34,8 @@ const DataList = () => {
   const handleGenerateData = () => {
     const number = Number(value);
 
-    if (!(number >= 1 && number <= 100)) {
-      setError('Please enter a number between 1 and 100');
+    if (!(number >= 1 && number <= maxData)) {
+      setError(`Please enter a number between 1 and ${maxData}`);
       setValue('');
       return;
     }
@@ -47,7 +48,7 @@ const DataList = () => {
     <>
       <span>
         <h2>Generate Fake Random Data</h2>
-        <h4>Generate data between 1 to 100</h4>
+        <h4>Generate data between 1 to {maxData}</h4>
       </span>
 
       <div className="generate">
