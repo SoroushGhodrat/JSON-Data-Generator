@@ -398,6 +398,17 @@ const projectManagerSkills: string[] = [
   'Cross-functional Collaboration',
   'Technical Proficiency',
 ];
+const mationalities: string[] = [
+  'German',
+  'Italian',
+  'Spanish',
+  'Greek',
+  'Dutch',
+  'Swedish',
+  'Portuguese',
+  'Polish',
+  'Norwegian',
+];
 
 export {
   maleFirstNames,
@@ -411,4 +422,5 @@ export {
   uiDesignerSkills,
   projectManagerSkills,
   fullstackSkills,
+  mationalities,
 };
