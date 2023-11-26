@@ -1,6 +1,6 @@
 # JSON Data Generator
 
-This is a React application built with TypeScript. It generates a JSON file with fake data, with a maximum of 100 entries.
+This is a React application built with TypeScript. It generates a JSON file with fake data, with a maximum of 200 entries.
 
 ## Getting Started
 
