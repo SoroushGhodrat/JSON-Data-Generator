@@ -10,7 +10,8 @@
 body {
   margin: 0;
   display: flex;
-  background: #f0f0f0;
+  background: #1B3258;
+  color: #FFDAB9;
   font-family: inherit;
 }
 
@@ -87,7 +88,7 @@ h4 {
   font-weight: 500;
   font-size: 1em;
   font-family: inherit;
-  color: #646cff;
+  color: #FFDAB9;
   text-decoration: inherit;
   border: none;
   background: none;
@@ -95,7 +96,7 @@ h4 {
 
 .action-buttons a {
   font-weight: 500;
-  color: #646cff;
+  color: #FFDAB9;
   text-decoration: inherit;
 }
 
