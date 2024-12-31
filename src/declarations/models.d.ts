@@ -11,6 +11,8 @@ interface Data {
   office: string;
   phone: number;
   skills: string[];
+  nationality: string;
+  description: string;
 }
 
 export default Data;

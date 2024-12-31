@@ -102,7 +102,7 @@ export default function generateRandomData(count = 1): Array<Data> {
       isAvailable: Math.random() < 0.5,
       gender: randomGender,
       age: Math.floor(Math.random() * (70 - 22 + 1)) + 22,
-      image: 'http://placehold.it/32x32',
+      image: 'https://picsum.photos/seed/picsum/200/300',
       email: `${randomFirstName.toLowerCase()}.${randomLastName.toLowerCase()}@example.com`,
       office: randomOffice,
       phone: randomPhone,

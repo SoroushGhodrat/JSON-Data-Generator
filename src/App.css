@@ -1,31 +1,55 @@
+/* Global Styles */
+* {
+  transition: all 0.4s;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
 }
 
 body {
   margin: 0;
   display: flex;
-  height: 100vh;
   background: #f0f0f0;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 h2 {
-  font-family: inherit;
   text-align: center;
   font-size: 2.5em;
   line-height: 1.1;
 }
+
 p,
 h4 {
-  font-family: inherit;
   text-align: center;
+  text-transform: capitalize;
+}
+
+/* Data Generation Styles */
+.data-generation-container {
+  border: 1px solid #007bff;
+  padding: 5px 5px 20px 5px;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
 .generate {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
 }
 
 .generate input {
@@ -47,10 +71,16 @@ h4 {
   color: #fff;
 }
 
+.generate button:hover {
+  background-color: #535bf2;
+  cursor: pointer;
+}
+
+/* Action Buttons Styles */
 .action-buttons {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
 }
 
 .action-buttons button {
@@ -74,29 +104,86 @@ h4 {
   color: #535bf2;
   cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 1.1em;
 }
 
+/* Error Message Styles */
 .error {
   color: red;
   font-size: 1em;
 }
 
+/* Data Display Styles */
 .data {
   overflow-y: scroll;
-  max-width: 600px;
-  padding: 10px;
-  background-color: #c7c5c5;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 1px;
   min-height: 60vh;
   text-overflow: hide;
 }
 
-.data pre {
-  overflow-x: hide !important;
-  text-overflow: hide !important;
+/* Theme Selector Styles */
+.theme-data-container {
+  border: 1px solid #007bff;
+  padding: 5px 5px 20px 5px;
+  border-radius: 10px;
 }
 
-/* For desktop view */
+.themeSelector {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.themeSelector label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.themeSelector select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.themeSelector select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Data Properties Styles */
+.dataProperties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #007bff;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.dataProperties div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.badge {
+  background-color: #646cff;
+  color: white;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Media Queries */
 @media (min-width: 1024px) {
   .data {
     max-height: 60vh;
@@ -109,6 +196,7 @@ h4 {
     width: 70%;
     margin-bottom: 10px;
   }
+
   .data {
     overflow-y: scroll;
     height: 100px;
