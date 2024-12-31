@@ -12,10 +12,25 @@ This is a React application built with TypeScript and Vite. It generates a JSON 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-1. **Clone the repository:** `git clone https://github.com/SoroushGhodrat/JSON-Data-Generator.git`
-2. **Navigate into the cloned repository:** `cd JSON-Data-Generator`
-3. **Install the dependencies:** `npm install`
-4. **Start the development server:** `npm run dev`
+1. **Clone the repository:** 
+   ```sh
+   git clone https://github.com/SoroushGhodrat/JSON-Data-Generator.git
+   ```
+
+2. Navigate into the cloned repository: 
+   ```sh
+   cd JSON-Data-Generator
+   ```
+
+3. Install the dependencies: 
+   ```sh
+   npm install
+   ```
+
+4. Start the development server: 
+   ```sh
+   npm run dev
+   ```
 
 ## Data Model
 
